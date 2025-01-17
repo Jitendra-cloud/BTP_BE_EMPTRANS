@@ -8,6 +8,7 @@
   "dependencies": {
     "@cap-js-community/odata-v2-adapter": "^1.14.0",
     "@sap/cds": "^8",
+    "@sap/hana-client": "^2.23.24",
     "express": "^4"
   },
   "devDependencies": {
@@ -16,5 +17,12 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana"
+      }
+    }
   }
 }
